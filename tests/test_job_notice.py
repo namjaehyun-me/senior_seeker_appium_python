@@ -361,7 +361,7 @@ class TestMyPage:
                 time.sleep(1)
             
             # 소개보기 버튼 클릭
-            intro_btn = wait.until(EC.element_to_be_clickable(self._get_locator(driver, 'intro_btn')))
+            # intro_btn = wait.until(EC.element_to_be_clickable(self._get_locator(driver, 'intro_btn')))
             intro_btn = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, '소개보기')
             intro_btn[0].click()
             time.sleep(1)
